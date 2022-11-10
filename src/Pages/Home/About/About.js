@@ -15,9 +15,9 @@ const About = () => {
                         We are qualified <br />
                         & of experience <br />
                         in this field</h1>
-                    <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                    <p className="py-6">the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                    <button className="btn btn-info">Get More Info</button>
+                    <p className="py-6">Photography is the art of capturing light with a camera, usually via a digital sensor or film, to create an image. With the right camera equipment, you can even photograph wavelengths of light invisible to the human eye, including UV, infrared, and radio. </p>
+                    <p >We have many experiencefull employees. </p>
+                    
                 </div>
             </div>
         </div>
