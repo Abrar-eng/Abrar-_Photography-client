@@ -5,6 +5,11 @@ import ServiceCard from './ServiceCard';
 
 const Services = () => {
     const [services, setServices] = useState([]);
+    const [visible, setVisible] = useState(3);
+
+    const ShowMoreItems =  () =>{
+         setVisible ((prevValue) => prevValue + 3)
+    }
     
     useEffect( () =>{
         fetch('http://localhost:5000/services')
@@ -21,14 +26,17 @@ const Services = () => {
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {
-                    services.map(service => <ServiceCard
+                    services.slice(0, visible).map(service => <ServiceCard
                         key={service._id}
                         service={service}
                     ></ServiceCard>)
                 }
+                <button className='btn btn-info' onClick={ShowMoreItems}>See All</button>
             </div>
         </div>
     );
 };
+
+
 
 export default Services;
