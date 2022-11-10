@@ -4,7 +4,7 @@
         "title": "Wedding Photography",
         "img": "https://i.ibb.co/J3WscNq/1.jpg",
         "price": "2.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi."
+        "description": "Wedding photography is a specialty in photography that is primarily focused on the photography of events and activities relating to weddings. It may include other types of portrait photography of the couple before the official wedding day, such as a pre-wedding engagement session."
         
     },
     {
@@ -12,7 +12,7 @@
         "title": "Fashion Photography",
         "img": "https://i.ibb.co/PwP8WRB/2.jpg",
         "price": "3.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi."
+        "description": "Fashion photography is a genre of photography which is devoted to displaying clothing and other fashion items. Fashion photography is most often conducted for advertisements or fashion magazines such as Vogue, Vanity Fair, or Elle."
         
     },
     {
@@ -20,7 +20,7 @@
         "title": "Food Photography",
         "img": "https://i.ibb.co/nRmGBBS/3.jpg",
         "price": "2.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi."
+        "description": "Food photography is a still life photography genre used to create attractive still life photographs of food. It is a specialization of commercial photography, the products of which are used in advertisements, magazines, packaging, menus or cookbooks."
         
     },
     {
@@ -28,7 +28,7 @@
         "title": "Wildlife Photography",
         "img": "https://i.ibb.co/4MSzhTn/4.jpg",
         "price": "5.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi."
+        "description": "Wildlife photography is a genre of photography concerned with documenting various forms of wildlife in their natural habitat. As well as requiring photography skills, wildlife photographers may need field craft skills."
         
     },
     {
@@ -36,7 +36,7 @@
         "title": "Architechtural Photography",
         "img": "https://i.ibb.co/CJGgbtz/5.jpg",
         "price": "3.5",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi"
+        "description": "Architectural photography is the sub genre of the photography discipline where the primary emphasis is made to capturing photographs of buildings and similar architectural structures that are both aesthetically pleasing and accurate in terms of representations of their subjects."
         
     },
     {
@@ -44,7 +44,7 @@
         "title": "Real Estate Photography",
         "img": "https://i.ibb.co/GQkczKP/6.jpg",
         "price": "4",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi."
+        "description": "Real Estate Photography is all about creating captivating images that can sell a property and be worth thousands of dollars. We have put together a series of real estate photography tips gathered from top photographers that would help you shoot images that sell homes and get ahead of the game."
         
     }
 ]
