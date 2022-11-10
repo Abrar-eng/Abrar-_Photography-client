@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import img from '../../assets/images/login/login.svg';
+import img from '../../assets/images/login/login.jpg';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const Login = () => {
@@ -76,7 +76,7 @@ const Login = () => {
                             <input className="btn btn-primary" type="submit" value="Login" />
                         </div>
                     </form>
-                    <p className='text-center'>New to Genius Car <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
+                    <p className='text-center'>New Here ? please sign up <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
                 </div>
             </div>
         </div>
