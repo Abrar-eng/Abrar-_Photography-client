@@ -5,12 +5,12 @@ const OrderRow = ({ order, handleDelete, handleStatusUpdate }) => {
     const [orderService, setOrderService] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${service}`)
+        fetch(`https://y-six-phi.vercel.app/services/${service}`)
             .then(res => res.json())
             .then(data => setOrderService(data));
     }, [service])
 
-    
+
 
     return (
         <tr>
@@ -24,7 +24,7 @@ const OrderRow = ({ order, handleDelete, handleStatusUpdate }) => {
                     <div className="avatar">
                         <div className="rounded w-24 h-24">
                             {
-                                orderService?.img && 
+                                orderService?.img &&
                                 <img src={orderService.img} alt="Avatar Tailwind CSS Component" />}
                         </div>
                     </div>
@@ -41,9 +41,9 @@ const OrderRow = ({ order, handleDelete, handleStatusUpdate }) => {
             </td>
             <td>Purple</td>
             <th>
-                <button 
-                onClick={() => handleStatusUpdate(_id)}
-                className="btn btn-ghost btn-xs">{status ? status : 'pending'}</button>
+                <button
+                    onClick={() => handleStatusUpdate(_id)}
+                    className="btn btn-ghost btn-xs">{status ? status : 'pending'}</button>
             </th>
         </tr>
     );

@@ -31,7 +31,7 @@ const Checkout = () => {
 
         // }
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://y-six-phi.vercel.app/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -42,10 +42,10 @@ const Checkout = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                if(data.acknowledged){
+                if (data.acknowledged) {
                     alert('Order placed successfully')
                     form.reset();
-                    
+
                 }
             })
             .catch(er => console.error(er));
