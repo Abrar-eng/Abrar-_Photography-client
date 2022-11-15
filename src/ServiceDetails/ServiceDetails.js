@@ -70,8 +70,7 @@ const ServiceDetails = () => {
                 <div className="card-body col-span-2">
                     <h2 className="card-title">{title}</h2>
                     <p>{description}</p>
-                    <p className='mt-5'>Cost of This Service : ${price}</p>
-                    <p>Service Rate: {rating}</p>
+                    <p className='mt-5'>Cost of This Service :$ {price}</p>
                     <div className="card-actions justify-end">
                         <button className="btn btn-primary">Confirm This Service</button>
                     </div>
@@ -132,7 +131,7 @@ const ServiceDetails = () => {
                         </div>
                     </>
                     :
-                    <p>Please login to add a review.<Link to='/login'>LogIn</Link></p>
+                    <p className='font-bold'>Please login to add a review. <Link className='text-primary' to='/login'>Login</Link></p>
                 }
 
 

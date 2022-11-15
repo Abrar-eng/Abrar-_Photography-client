@@ -1,10 +1,10 @@
 import Blog from "../../Blog/Blog";
 import Main from "../../Layout/Main";
+import AddServices from "../../Pages/AddServices/AddServices";
 import Checkout from "../../Pages/Checkout/Checkout";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import MyReview from "../../Pages/MyReview/MyReview";
-import Orders from "../../Pages/Orders/Orders";
 import SignUp from "../../Pages/SignUp/SignUp";
 import ServiceDetails from "../../ServiceDetails/ServiceDetails";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
@@ -47,8 +47,8 @@ const router = createBrowserRouter([
         loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
       },
       {
-        path: '/orders',
-        element: <PrivateRoute><Orders></Orders></PrivateRoute>
+        path: '/AddServices',
+        element: <PrivateRoute><AddServices></AddServices></PrivateRoute>
       },
     ]
   }

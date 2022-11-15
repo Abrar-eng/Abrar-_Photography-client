@@ -2,8 +2,23 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/images/login/login.jpg';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import {getAuth, GoogleAuthProvider, signInWithPopup} from 'firebase/auth'
+import app from '../../firebase/firebase.config'
+
+const auth = getAuth(app);
 
 const Login = () => {
+    const provider = new GoogleAuthProvider();
+    const handleGoogleSignIn = () =>{
+          signInWithPopup(auth, provider)
+          .then(result =>{
+           const user = result.user;
+           console.log(user);
+          })
+          .catch (error =>{
+            
+          })
+    }
 
     const { login } = useContext(AuthContext);
     const location = useLocation();
@@ -76,7 +91,8 @@ const Login = () => {
                             <input className="btn btn-primary" type="submit" value="Login" />
                         </div>
                     </form>
-                    <p className='text-center'>New Here ? please sign up <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
+                    <p className='text-center'>New Here ? please sign up <Link className='text-sky-500 font-bold' to="/signup">Sign Up</Link> </p>
+                    <button className='btn btn-success mt-6' onClick={handleGoogleSignIn}>Sign in with Google</button>
                 </div>
             </div>
         </div>

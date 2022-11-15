@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.png';
+import userImg from '../../../assets/user.png'
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
@@ -13,18 +14,20 @@ const Header = () => {
     }
 
     const menuItems = <>
-        <li className='font-semibold'><Link to='/'>Home</Link></li>
-        <li className='font-semibold'><Link to='/blog'>Blog</Link></li>
+        <li className='font-semibold'><Link className='text-sky-500 bg-slate-300' to='/'>Home</Link></li>
+        <li className='font-semibold'><Link className='text-sky-500 bg-slate-300' to='/blog'>Blog</Link></li>
         {
             user?.email ?
                 <>
-                    <li className='font-semibold'><Link to='/orders'>Orders</Link></li>
-                    <li className='font-semibold'>
+                    <li className='font-semibold text-sky-500 bg-slate-300'><Link to='/AddServices'>Add Services</Link></li>
+                    <li className='font-semibold text-sky-500 bg-slate-300'><Link to="/myReviews">My Reviews</Link></li>
+                    <li className='font-semibold text-sky-500 bg-slate-300'>
                         <button onClick={ handleLogOut } className='btn-ghost'>Sign Out</button>
                     </li>
+                    <li><img src={userImg} alt="" /></li>
                 </>
                 :
-                <li className='font-semibold'><Link to='/login'>Login</Link></li>
+                <li className='font-semibold'><Link className='text-sky-500 bg-slate-300' to='/login'>Login</Link></li>
         }
     </>
 
@@ -41,6 +44,9 @@ const Header = () => {
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
                     <img src={logo} alt="" />
+                </Link>
+                <Link to="/" className="btn btn-ghost normal-case text-xl">
+                    <h2 className='font-bold'>Abrar's Photography</h2>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
