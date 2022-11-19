@@ -1,14 +1,13 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useLocation, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../context/AuthProvider/AuthProvider';
-import useTitle from '../../hooks/useTitle';
+
 
 const Update = () => {
    const storedUser = useLoaderData();
    const navigate = useNavigate()
    const location = useLocation();
    const from = location.state?.from?.pathname || '/myReviews'
-   useTitle('Update Review');
+
    const [updateReview,setUpdateReview]=useState({storedUser})
 
     const handleUpdateReview=event=>{

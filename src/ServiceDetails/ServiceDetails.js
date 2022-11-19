@@ -7,7 +7,7 @@ const ServiceDetails = () => {
     const { _id, price, title, description, rating, img, reviewer_text,
         reviewer_name, reviewer_img } = useLoaderData();
     
-    // const [review,setReview]=useState({});
+    
     const { user } = useContext(AuthContext);
 
     const navigate = useNavigate()
@@ -52,18 +52,14 @@ const ServiceDetails = () => {
         navigate(from, { replace: true })
     }
 
-    // const handleInputBlur=event =>{
-    //      const field=event.target.name;
-    //      const value=event.target.value;
-    //      const newUser=
-    // }
+    
 
 
     return (
         <div>
-            <h2 className='text-3xl text-center mt-4'>Hi,Welcome to service details page</h2>
+            <h2 className='text-3xl text-center mt-4'>Welcome to our service details page</h2>
             <h2 className='text-2xl text-center mt-4'>Below You Will Get The Details About This Service.</h2>
-            <div className="card lg:card-side bg-base-100 border-2  grid grid-cols-3  gap-4  border-indigo-600 shadow-xl m-5">
+            <div className="card lg:card-side bg-base-100 border-2  grid grid-cols-3  gap-4  border-sky-600 shadow-xl m-5">
                 <figure>
                     <img src={img} className='h-full' alt="Album" />
                 </figure>
@@ -78,8 +74,8 @@ const ServiceDetails = () => {
             </div>
 
             {/* Review Section  */}
-            <div className='bg-pink-300 m-6 rounded-lg'>
-                <h1 className='text-3xl text-center mt-10 p-3 font-bold text-indigo-700'>See What our Reviewers Saying</h1>
+            <div className='bg-sky-300 m-6 rounded-lg'>
+                <h1 className='text-3xl text-center mt-10 p-3 font-bold text-sky-700'>See What our Reviewers Saying</h1>
 
                 <div className="stats shadow bg-lime-200 h-[200px] w-[97%] m-5 mb-7">
 
@@ -88,12 +84,14 @@ const ServiceDetails = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                         </div>
                         <div className="stat-title text-secondary font-bold text-2xl">Ratings</div>
+                        <div className='text-5xl font-bold text-yellow-600'>*****</div>
                         <div className="stat-value text-primary">{rating}</div>
                     </div>
 
                     <div className="stat">
                         <p className="stat-title text-secondary font-bold text-2xl">Reviewer Feedback</p>
-                        <p className="text-violet-600 text-lg">{reviewer_text}.</p>
+                        <p>This is really a good service</p>
+                        <p className="text-violet-600 text-lg">{reviewer_text}</p>
                         <p className="stat-desc font-bold">You Can Choose This Service.</p>
                     </div>
 
@@ -106,6 +104,8 @@ const ServiceDetails = () => {
                                 </div>
                             </div>
                         </div>
+                        <p className="stat-title text-secondary font-bold text-2xl">Reviewer Name</p>
+                        <div className="stat-title text-primary font-bold text-2xl">Asif Hasan</div>
                         <div className="stat-title text-secondary font-bold text-2xl">{reviewer_name}</div>
                     </div>
 
