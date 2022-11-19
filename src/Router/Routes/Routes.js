@@ -51,6 +51,11 @@ const router = createBrowserRouter([
         path: '/AddServices',
         element: <PrivateRoute><AddServices></AddServices></PrivateRoute>
       },
+      {
+        path:'/services/:id',
+        element:<AddServices></AddServices>,
+        loader:({params})=>fetch(`https://y-six-phi.vercel.app/services/${params.id}`) 
+     }
     ]
   }
 ]);

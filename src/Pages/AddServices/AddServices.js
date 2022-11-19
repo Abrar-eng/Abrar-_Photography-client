@@ -7,7 +7,7 @@ const AddServices = () => {
     const location = useLocation();
     const from = location.state?.from?.pathname || '/services'
 
-// {"_id":{"$oid":"63695ce306eddb858d3e59ef"},"service_id":"05","service_name":"Hiking-Support","img":"","new_ser_price":"120.00","new_service_name":"paragliding"}
+
 
    const handleAddNewService=event=>{
     event.preventDefault();
@@ -26,7 +26,7 @@ const AddServices = () => {
     description
  }
 
-    fetch('https://raj-tourist-services-server.vercel.app/Allservices', {
+    fetch('https://y-six-phi.vercel.app/services', {
           method:'POST',
           headers: {
              'content-type': 'application/json'
@@ -49,13 +49,11 @@ const AddServices = () => {
    
     return (
         <div>
-            <div className='bg-pink-300 m-6 rounded-lg'>
+            <div className='bg-green-300 m-6 rounded-lg'>
          <h1 className='text-3xl text-center mt-10 p-3 font-bold text-indigo-700'>Please Add Your New Services.</h1> 
                    
                         <div className='flex justify-center'>
-                          {/* 
-                          {"_id":{"$oid":"63695ce306eddb858d3e59ef"},"service_id":"05","service_name":"Hiking-Support","img":"","new_ser_price":"120.00","new_service_name":"paragliding"}
-                           */}
+                          
                             <form onSubmit={handleAddNewService}>
                                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
                                     <input name="service_id" type="text" placeholder="service_id" className="input input-ghost w-full input-bordered" />

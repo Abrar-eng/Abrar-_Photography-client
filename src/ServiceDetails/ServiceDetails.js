@@ -84,13 +84,11 @@ const ServiceDetails = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                         </div>
                         <div className="stat-title text-secondary font-bold text-2xl">Ratings</div>
-                        <div className='text-5xl font-bold text-yellow-600'>*****</div>
-                        <div className="stat-value text-primary">{rating}</div>
+                        <div className="stat-value text-4xl font-bold text-yellow-400">{rating}</div>
                     </div>
 
                     <div className="stat">
                         <p className="stat-title text-secondary font-bold text-2xl">Reviewer Feedback</p>
-                        <p>This is really a good service</p>
                         <p className="text-violet-600 text-lg">{reviewer_text}</p>
                         <p className="stat-desc font-bold">You Can Choose This Service.</p>
                     </div>
@@ -105,8 +103,7 @@ const ServiceDetails = () => {
                             </div>
                         </div>
                         <p className="stat-title text-secondary font-bold text-2xl">Reviewer Name</p>
-                        <div className="stat-title text-primary font-bold text-2xl">Asif Hasan</div>
-                        <div className="stat-title text-secondary font-bold text-2xl">{reviewer_name}</div>
+                        <div className="stat-title text-blue-900 font-bold text-xl">{reviewer_name}</div>
                     </div>
 
                 </div>

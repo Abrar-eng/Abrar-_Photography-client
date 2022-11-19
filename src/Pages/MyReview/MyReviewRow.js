@@ -6,7 +6,7 @@ const {_id,serviceName,customer,price,email,service,message,address}=review;
 const [reviewService,setReviewservice]=useState({})
 
 useEffect(()=>{
-  fetch(`https://y-six-phi.vercel.app/Allservices/${service}`)
+  fetch(`https://y-six-phi.vercel.app/services/${service}`)
   .then(res=>res.json())   
   .then(data=>setReviewservice(data))
 },[service])
