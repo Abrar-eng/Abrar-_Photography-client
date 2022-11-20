@@ -1,10 +1,11 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Loading from '../../Shared/Loading/Loading';
 import ServiceCard from './ServiceCard';
 
 const Services = () => {
-    const [services, setServices] = useState([]);
+    const [services, setServices, isLoading] = useState([]);
     const [visible, setVisible] = useState(3);
 
     const ShowMoreItems = () => {
@@ -16,6 +17,10 @@ const Services = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
+
+    if (isLoading){
+        return <Loading></Loading>
+    }
 
     return (
         <div>
